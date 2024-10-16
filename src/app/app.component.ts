@@ -1,14 +1,21 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
+import { ApiClientService } from './Services/ApiClientService';
+import { DeviceChannelGet, DeviceGet, DevicePortGet } from './Constants/ServiceConstants';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [CommonModule, RouterOutlet],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  providers:[ApiClientService],
+  template: '<router-outlet></router-outlet>',
 })
 export class AppComponent {
-  title = 'HomeAsistantView';
+  title = 'Omka Home Asistant';
+  constructor(private apiClient: ApiClientService) {
+   
+  }
+
+
 }
