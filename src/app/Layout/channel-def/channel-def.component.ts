@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { ApiClientService } from '../../Services/ApiClientService';
-import { DeviceGet } from '../../Constants/ServiceConstants';
+import { DeviceChannelGet } from '../../Constants/ServiceConstants';
+import { DockPanelComponent } from '../../Components/dock-panel/dock-panel.component';
 
 @Component({
   selector: 'app-channel-def',
   standalone: true,
-  imports: [],
+  imports: [DockPanelComponent],
   providers:[ApiClientService],
   templateUrl: './channel-def.component.html',
   styleUrl: './channel-def.component.scss'
@@ -17,7 +18,7 @@ export class ChannelDefComponent {
   }
 
   getdata(){
-    this.apiClient.get(DeviceGet,this,x=>{
+    this.apiClient.get(DeviceChannelGet,this,x=>{
      console.log(x);
      })
    }

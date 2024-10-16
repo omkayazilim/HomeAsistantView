@@ -1,25 +1,24 @@
 import { Component } from '@angular/core';
+import { DevicePortGet, DeviceTypeGet } from '../../Constants/ServiceConstants';
 import { ApiClientService } from '../../Services/ApiClientService';
-import { DevicePortGet } from '../../Constants/ServiceConstants';
 import { DockPanelComponent } from '../../Components/dock-panel/dock-panel.component';
 
 @Component({
-  selector: 'app-port-def',
+  selector: 'app-device-type-def',
   standalone: true,
   imports: [DockPanelComponent],
-  providers:[ApiClientService],
-  templateUrl: './port-def.component.html',
-  styleUrl: './port-def.component.scss'
+  templateUrl: './device-type-def.component.html',
+  styleUrl: './device-type-def.component.scss'
 })
-export class PortDefComponent {
-  title = 'Omka Home Asistant Channel Definition';
+export class DeviceTypeDefComponent {
+  title = 'Omka Home Asistant Device Type Definition';
 
   constructor(private apiClient: ApiClientService) {
     this.getdata();
   }
 
   getdata(){
-    this.apiClient.get(DevicePortGet,this,x=>{
+    this.apiClient.get(DeviceTypeGet,this,x=>{
      console.log(JSON.stringify(x));
      })
    }

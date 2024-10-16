@@ -2,10 +2,14 @@
   export const releSetValueUrl:string="Esp/EspSetValue"
   export const espPingUrl:string="/Esp/PingEsp"
  
-
+  export const DeviceTypeGet:string="DeviceTypeDef/Get"
+  export const DeviceTypeGetById:string="DeviceTypeDef/Get/GetById?id="
+  export const DeviceTypeCreate:string="DeviceTypeDef/Create"
+  export const DeviceTypeUpdate:string="DeviceTypeDef/Update"
+  export const DeviceTypeDelete:string="DeviceTypeDef/Delete?id=" 
 
   export const DeviceGet:string="DeviceDef/Get"
-   export const DeviceGetById:string="DeviceDef/Get/GetById?id="
+  export const DeviceGetById:string="DeviceDef/Get/GetById?id="
   export const DeviceCreate:string="DeviceDef/Create"
   export const DeviceUpdate:string="DeviceDef/Update"
   export const DeviceDelete:string="DeviceDef/Delete?id=" 

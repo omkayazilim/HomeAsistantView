@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { ApiClientService } from '../../Services/ApiClientService';
 import { DeviceGet } from '../../Constants/ServiceConstants';
+import { DockPanelComponent } from '../../Components/dock-panel/dock-panel.component';
 
 @Component({
   selector: 'app-device-def',
   standalone: true,
-  imports: [],
+  imports: [DockPanelComponent],
   providers:[ApiClientService],
   templateUrl: './device-def.component.html',
   styleUrl: './device-def.component.scss'

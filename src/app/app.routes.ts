@@ -12,5 +12,11 @@ export const routes: Routes = [
     },
     {
         path:"device", loadComponent:()=>import("./Layout/device-def/device-def.component").then(m=>m.DeviceDefComponent)
+    },
+    {
+        path:"devicetype", loadComponent:()=>import("./Layout/device-type-def/device-type-def.component").then(m=>m.DeviceTypeDefComponent)
+    },
+    {
+        path:"operation", loadComponent:()=>import("./Layout/channel-operation/channel-operation.component").then(m=>m.ChannelOperationComponent)
     }
 ];
