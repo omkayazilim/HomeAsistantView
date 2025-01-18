@@ -4,11 +4,13 @@ import { MenuItem } from 'primeng/api';
 import { DockModule } from 'primeng/dock';
 import { DockPanelComponent } from "../../Components/dock-panel/dock-panel.component";
 import { MenubarComponent } from "../../Components/menubar/menubar.component";
+import { PanelModule } from 'primeng/panel';
+import { CardModule } from 'primeng/card';
 
 @Component({
   selector: 'app-dash-board',
   standalone: true,
-  imports: [DockPanelComponent, MenubarComponent],
+  imports: [DockPanelComponent, MenubarComponent,PanelModule,CardModule],
   providers:[Router,DockModule],
   templateUrl: './dash-board.component.html',
   styleUrl: './dash-board.component.scss'

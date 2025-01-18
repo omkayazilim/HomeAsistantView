@@ -3,3 +3,16 @@
 @import "primeng/resources/themes/lara-light-blue/theme.css";
 @import "primeng/resources/primeng.css";
 @import "primeicons/primeicons.css";
+
+body {
+  //  align-items: center;
+    background-image: linear-gradient(rgb(31, 28, 28), rgb(10, 34, 56), rgb(45, 93, 105));
+    background-attachment: fixed;
+    background-size: cover;
+    display:flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+    //height: 100vh;
+  }
+

@@ -1,3 +1,48 @@
 .dockbackGround{
     background-color: black;
 }
+
+.glass2 {
+  // align-items: center;
+   background-color: rgba(35, 35, 35, 0.1);
+   border: 1px solid rgba(235, 235, 235, 0.1);
+   border-radius: 15px;
+   color: white;
+ //  display: flex;
+   //font-size: clamp(12px, 3vw, 2rem);
+   //font-weight: 300;
+  // letter-spacing: .375ch;
+   //justify-content: center;
+  // height: 27.35vh;
+   //margin: auto;
+   //position: relative;
+  // text-transform: uppercase;
+   //width: 27.35vw;
+   box-shadow: 0 0 18px 3px rgba(0, 0, 0, .3);
+   margin-top: 15px;
+   padding: 8px;
+ }
+
+   .info_battery{
+     font-size: 46px;
+     font-weight: 600;
+   }
+
+   .info_battery_header{
+    font-size: 16px;
+     text-align: center;
+  }
+
+  .activated_device{
+    background-color: rgb(9, 126, 5);
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 18px 3px rgba(0, 0, 0, .3);
+  }
+
+  .disactive_device{
+    background-color: rgba(165, 42, 42, 0.541);
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 18px 3px rgba(0, 0, 0, .3);
+  }
