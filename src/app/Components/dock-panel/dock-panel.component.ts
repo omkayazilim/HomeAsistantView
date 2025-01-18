@@ -14,35 +14,50 @@ import { DockModule } from 'primeng/dock';
 export class DockPanelComponent  {
   items:[]=[];
   dockItems: MenuItem[]=[]; 
-constructor(private router:Router) {
+constructor(private router:Router) 
+{
   this.dockItems = [ 
     { 
-        label: 'GfgLogo 1', 
-        icon:'', 
+        label: '', 
+        icon:'pi pi-home', 
         title:"Ana Sayfa",
     
     }, 
     { 
-        label: 'GfgLogo 2', 
-        icon: '', 
+        label: '/device', 
+        icon: 'pi pi-microchip-ai', 
         title:"Cihazlar",
     
     }, 
     { 
-        label: 'GfgLogo 3', 
-        icon: '', 
+        label: '/devicetype', 
+        icon: 'pi pi-gauge', 
         title:"Cihaz Tipi",
     
     }, 
     { 
-        label:'GfgLogo 4', 
-        icon:'', 
+        label:'/channel', 
+        icon:'pi pi-wave-pulse', 
         title:"Kanal Yönetimi",
        
     }, 
+    { 
+      label:'/port', 
+      icon:'pi pi-server', 
+      title:"Port Yönetimi",
+     
+    }, 
+  { 
+      label:'/operation', 
+      icon:'pi pi-list-check', 
+      title:"Kanal Operasyon",
+     
+    }, 
+    
 ];
 }
-route(op:string){
-  this.router.navigateByUrl(op);
+route(op:string)
+{
+  window.location.href=op;
 }
 }

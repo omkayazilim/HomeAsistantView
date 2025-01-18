@@ -1,1 +1,22 @@
 <dock-panel></dock-panel>
+<p-table [value]="ports" styleClass="grid_w">
+    <ng-template pTemplate="header">
+        <tr>
+            <th>Port Kodu</th>
+            <th>Port Adı</th>
+            <th>Kullanım Durumu</th>
+            <th>I/O Port Tipi</th>
+            <th>Erişim Adresi</th>
+        </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-port>
+        <tr>
+       
+            <td>{{port.portNumber}}</td>
+            <td>{{port.portCode}}</td>
+            <td>{{port.portDesc}}</td>
+            <td>{{port.ioPortType}}</td>
+            <td>{{port.isActive}}</td>
+        </tr>
+    </ng-template>
+</p-table>

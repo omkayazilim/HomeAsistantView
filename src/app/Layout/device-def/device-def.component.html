@@ -1,1 +1,26 @@
 <dock-panel></dock-panel>
+<div style="background-color: gray;">
+
+
+<p-table [value]="devices" styleClass="grid_w">
+    <ng-template pTemplate="header">
+        <tr>
+            <th>Cihaz Kodu</th>
+            <th>Cihaz Adı</th>
+            <th>Kullanım Durumu</th>
+            <th>Port Sayısı</th>
+            <th>Erişim Adresi</th>
+        </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-devices>
+        <tr>
+       
+            <td>{{devices.deviceCode}}</td>
+            <td>{{devices.deviceName}}</td>
+            <td>{{devices.isActive}}</td>
+            <td>{{devices.totalIOPortCount}}</td>
+            <td>{{devices.deviceAdressUrl}}</td>
+        </tr>
+    </ng-template>
+</p-table>
+</div>

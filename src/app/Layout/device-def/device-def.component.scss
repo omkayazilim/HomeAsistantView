@@ -1,0 +1,19 @@
+
+.cardMain {
+    &.p-card {
+      border-radius: 1rem;
+      overflow: hidden;
+    }
+  
+    .p-card-title {
+    }
+    .p-card-body {
+      padding: 2rem !important;
+      background: #a6120d;
+      color: #fff;
+    }
+  }
+
+  .grid_w{
+    width: 500px;
+  }

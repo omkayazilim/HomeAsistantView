@@ -1,1 +1,19 @@
 <dock-panel></dock-panel>
+<p-table [value]="devicetypes" styleClass="grid_w">
+    <ng-template pTemplate="header">
+        <tr>
+            <th>Cihaz Tipi</th>
+            <th>Cihaz Tipi Adı</th>
+            <th>Cihaz Durumu</th>
+        </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-devicetype>
+        <tr>
+       
+            <td>{{devicetype.devicetype}}</td>
+            <td>{{devicetype.deviceTypeDesc}}</td>
+            <td>{{devicetype.isActive}}</td>
+      
+        </tr>
+    </ng-template>
+</p-table>

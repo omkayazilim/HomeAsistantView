@@ -1,1 +1,23 @@
 <dock-panel></dock-panel>
+
+<p-table [value]="chanels" styleClass="grid_w">
+    <ng-template pTemplate="header">
+        <tr>
+            <th>Kanal Kodu</th>
+            <th>Kanal Adı</th>
+            <th>Kullanım Durumu</th>
+            <th>Port Sayısı</th>
+            <th>Erişim Adresi</th>
+        </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-channels>
+        <tr>
+       
+            <td>{{channels.deviceChannelCode}}</td>
+            <td>{{channels.deviceChannelDesc}}</td>
+            <td>{{channels.isActive}}</td>
+            <td>{{channels.deviceChannelIcon}}</td>
+            <td>{{channels.channelStatus}}</td>
+        </tr>
+    </ng-template>
+</p-table>
