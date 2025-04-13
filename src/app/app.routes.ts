@@ -19,4 +19,8 @@ export const routes: Routes = [
     {
         path:"operation", loadComponent:()=>import("./Layout/channel-operation/channel-operation.component").then(m=>m.ChannelOperationComponent)
     }
+    ,
+    {
+        path:"rele", loadComponent:()=>import("./Layout/relecontrol/relecontrol.component").then(m=>m.RelecontrolComponent)
+    }
 ];

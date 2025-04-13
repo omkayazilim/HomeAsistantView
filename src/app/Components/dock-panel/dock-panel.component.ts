@@ -48,9 +48,9 @@ constructor(private router:Router)
      
     }, 
   { 
-      label:'/operation', 
+      label:'/rele', 
       icon:'pi pi-list-check', 
-      title:"Kanal Operasyon",
+      title:"Operasyon",
      
     }, 
     

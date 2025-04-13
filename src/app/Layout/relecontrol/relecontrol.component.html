@@ -1,0 +1,14 @@
+<dock-panel></dock-panel>
+
+
+    @for (item of releList; track item) 
+    {
+        @if(item.Value==1){
+     <button style="width: 100px; height: 100px; background-color: green;" class="btn btn-success" (click)="actionRele(item)">{{item.Title}}</button>  
+        }
+        @else{
+            <button style="width: 100px; height: 100px; background-color: gray;" class="btn btn-success" (click)="actionRele(item)">{{item.Title}}</button> 
+        }
+    }
+
+
