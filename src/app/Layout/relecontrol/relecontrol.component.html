@@ -4,10 +4,21 @@
     @for (item of releList; track item) 
     {
         @if(item.Value==1){
-     <button style="width: 100px; height: 100px; background-color: green;" class="btn btn-success" (click)="actionRele(item)">{{item.Title}}</button>  
+     <button style="width: 100px; height: 100px; background-color: green; margin: 3px;" class="btn btn-success" (click)="actionRele(item)">{{item.Title}}</button>  
         }
         @else{
-            <button style="width: 100px; height: 100px; background-color: gray;" class="btn btn-success" (click)="actionRele(item)">{{item.Title}}</button> 
+     <button style="width: 100px; height: 100px; background-color: gray; margin: 3px;" class="btn btn-success" (click)="actionRele(item)">{{item.Title}}</button> 
+        }
+    }
+  <br>
+  <hr>
+    @for (item of releList2; track item) 
+    {
+        @if(item.Value==1){
+     <button style="width: 100px; height: 100px; background-color: green; margin: 3px;" class="btn btn-success" (click)="actionRele2(item)">{{item.Title}}</button>  
+        }
+        @else{
+     <button style="width: 100px; height: 100px; background-color: gray; margin: 3px;" class="btn btn-success" (click)="actionRele2(item)">{{item.Title}}</button> 
         }
     }
 
