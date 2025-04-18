@@ -58,6 +58,7 @@ constructor(private router:Router)
 }
 route(op:string)
 {
+  this.router.navigate([op])
   window.location.href=op;
 }
 }
